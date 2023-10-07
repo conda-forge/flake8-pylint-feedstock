@@ -1,13 +1,13 @@
 {% set name = "flake8-pylint" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/flake8-pylint-{{ version }}.tar.gz
-  sha256: f8fc26d458d85965a04f78417f97ae4eaa90c9bafd5c4561b1b4f10c8a9159a3
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 7741f9a63b05768fc4c641c7f6389bc33c91f9ed9bfd59c01540bbb7acc180e3
 
 build:
   noarch: python
